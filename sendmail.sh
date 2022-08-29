@@ -7,10 +7,10 @@ CURRENT_LOCAL="$(pwd)";
 #source getErrorLog.sh;
 SMTP_SRV="smtp.office365.com";
 SMTP_PORT="587";
-SMTP_USR="$(echo -ne 'YXNzaXN0ZWMubm9jQHNybWFzc2V0LmNvbS5icgo=' | base64 -d)";
-SMTP_PASS="$(echo -ne 'NGcxbDF0eUBST09UIUAjMjAyMQo=' | base64 -d)";
-MAIL_FROM="$(echo -ne 'YXNzaXN0ZWMubm9jQHNybWFzc2V0LmNvbS5icgo=' | base64 -d)";
-MAIL_TO="$(echo -ne "dmluaWNpdXMuYWxjYW50YXJhQHNvbW9zYWdpbGl0eS5jb20uYnIK" | base64 -d)";
+SMTP_USR="$(echo -ne 'xxxxxx' | base64 -d)";
+SMTP_PASS="$(echo -ne 'xxxxxxx' | base64 -d)";
+MAIL_FROM="$(echo -ne 'yyyyyyyy' | base64 -d)";
+MAIL_TO="$(echo -ne "yyyyyyyyy" | base64 -d)";
 SUBJECT="REPORT: PODs com status diferente de Running";
 
 HEADER_REPORT_FILE="
