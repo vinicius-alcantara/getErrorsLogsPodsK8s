@@ -1,1 +1,1 @@
-# getErrosLogsPods-Ansible
+# getErrorsLogsPods-Ansible
