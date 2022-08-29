@@ -1,0 +1,399 @@
+From: assistec.noc@srmasset.com.br
+To: vinicius.alcantara@somosagility.com.br
+Subject: REPORT: PODs com status diferente de Running
+#Content-Type: text/html; charset=utf8
+
+
+Segue a Lista de pods com status diferente de Running no Cluster K8s:
+#####################################################################################
+
+Quantidade de pods listados: 41
+#####################################################################################
+ 
+## Aplication Namespace: arbi-api-integration-1151
+## Pod Name: staging-579c4d4cf5-4g2fs
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                 From                    Message
+  ----     ------   ----                ----                    -------
+  Normal   Pulled   50m (x57 over 5h)   kubelet, worker-k8s-27  Container image "gitlab.interno.srmasset.com:5005/srm/arbi-api-integration/master:9429e5e6eba0c4a13b19e44f2b0ff54de591a0aa" already present on machine
+  Warning  BackOff  9s (x1487 over 5h)  kubelet, worker-k8s-27  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: comum-assinatura-digital-lacuna-176
+## Pod Name: desenvolvimento-86b5758979-4xkmr
+Events:
+  Type     Reason            Age                 From               Message
+  ----     ------            ----                ----               -------
+  Warning  FailedScheduling  1m (x3359 over 1d)  default-scheduler  persistentvolumeclaim "nfs-opt-assinatura-digital-homolog-comum-assinatura-digital-lacuna" is being deleted
+#####################################################################################
+## Aplication Namespace: comum-consult-economic-group-1007
+## Pod Name: staging-695b968dd6-qcmxg
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x24785 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: comum-exportador-dados-853
+## Pod Name: staging-6f98cccdb9-xh69v
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x25387 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: comum-integracao-serasa-673
+## Pod Name: staging-57f7f6bb9-chtgk
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   39m (x1077 over 3d)  kubelet, worker-k8s-11  Container image "gitlab.interno.srmasset.com:5005/comum/comum-integracao-serasa/master:862cebe2f949ce0891cffe6a8d5b1078ae314aba" already present on machine
+  Warning  BackOff  4m (x25345 over 3d)  kubelet, worker-k8s-11  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-5559d9df8d-jbm7b
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  1m (x11403 over 1d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: comum-remessa-872
+## Pod Name: staging-6b9bd9fcdc-cgjs5
+Events:
+  Type     Reason            Age                 From               Message
+  ----     ------            ----                ----               -------
+  Warning  FailedScheduling  1m (x3289 over 1d)  default-scheduler  persistentvolumeclaim "nfs-opt-comum-remessa-homolog-comum-remessa" not found
+#####################################################################################
+## Aplication Namespace: core-cadastro-licenciados-1262
+## Pod Name: desenvolvimento-7fb5cbc8-wkj6p
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x24179 over 3d)  kubelet, worker-k8s-13  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: core-open-account-api-654
+## Pod Name: desenvolvimento-76f5c798fc-s9sqb
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason     Age                  From                    Message
+  ----     ------     ----                 ----                    -------
+  Warning  BackOff    9m (x14523 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+  Warning  Unhealthy  4m (x6093 over 3d)   kubelet, worker-k8s-22  Liveness probe failed: Get http://10.42.56.82:80/health: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+#####################################################################################
+## Aplication Namespace: core-open-account-composite-1116
+## Pod Name: desenvolvimento-6c86ddd57f-shvgn
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason     Age                  From                    Message
+  ----     ------     ----                 ----                    -------
+  Warning  Unhealthy  34m (x5700 over 3d)  kubelet, worker-k8s-24  Liveness probe failed: Get http://10.42.62.121:80/health: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+  Warning  BackOff    9m (x14829 over 3d)  kubelet, worker-k8s-24  Back-off restarting failed container
+  Warning  Unhealthy  4m (x9020 over 3d)   kubelet, worker-k8s-24  Readiness probe failed: Get http://10.42.62.121:80/health: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+#####################################################################################
+## Aplication Namespace: core-single-registration-scheduler-1094
+## Pod Name: desenvolvimento-664494768f-qk6vp
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason     Age                  From                    Message
+  ----     ------     ----                 ----                    -------
+  Warning  Unhealthy  14m (x9602 over 3d)  kubelet, worker-k8s-24  Readiness probe failed: Get http://10.42.62.123:80/health: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+  Warning  BackOff    4m (x14528 over 3d)  kubelet, worker-k8s-24  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: lacuna-api-integration-trusthub-1195
+## Pod Name: desenvolvimento-7cbd776f7-4bfs6
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   14m (x1052 over 3d)  kubelet, worker-k8s-10  Container image "gitlab.interno.srmasset.com:5005/srm/lacuna-api-integration-trusthub/master:5ca688ed7ec65a444d84807693a08685c08c07fc" already present on machine
+  Warning  BackOff  4m (x25120 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Pod Name: desenvolvimento-6ff8699df9-2t5ct
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   54m (x1046 over 3d)  kubelet, worker-k8s-11  Container image "gitlab.interno.srmasset.com:5005/srm/lacuna-api-integration-trusthub/master:5634db9810487e1cf2f98c2dcb170471223f490c" already present on machine
+  Warning  BackOff  4m (x24360 over 3d)  kubelet, worker-k8s-11  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: m18-cadastro-640
+## Pod Name: review-fixemail-4yy98a-6b6c55d9d6-ls7sz
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                   From                    Message
+  ----     ------   ----                  ----                    -------
+  Warning  BackOff  18s (x19617 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: m18-cadastro-th-616
+## Pod Name: staging-76d467dd7d-mtzms
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                 From                    Message
+  ----     ------   ----                ----                    -------
+  Normal   Pulled   19m (x73 over 6h)   kubelet, worker-k8s-11  Container image "gitlab.interno.srmasset.com:5005/m18/m18-cadastro-th/master:71fd245aad806e2d2f1d7b9cfd2d54e376d6cecd" already present on machine
+  Warning  BackOff  4m (x1655 over 6h)  kubelet, worker-k8s-11  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-65d58d8877-xl7kt
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                   From                    Message
+  ----     ------   ----                  ----                    -------
+  Normal   Pulled   45m (x835 over 3d)    kubelet, worker-k8s-10  Container image "gitlab.interno.srmasset.com:5005/m18/m18-cadastro-th/master:fd2e2ddca264ec84458fc81a6714bf6e90edca08" already present on machine
+  Warning  BackOff  47s (x20131 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: m18-cpd-processador-transacao-558
+## Pod Name: staging-d47d5cf-9kckr
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x24674 over 3d)  kubelet, worker-k8s-24  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-848845ffbd-flkxc
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   16m (x469 over 1d)   kubelet, worker-k8s-22  Container image "gitlab.interno.srmasset.com:5005/m18/m18-cpd-processador-transacao/master:050913db7570e31a445521a214fefd0567586249" already present on machine
+  Warning  BackOff  1m (x10792 over 1d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: m18-cpd-transferencia-doc-ted-568
+## Pod Name: staging-c94dd4dff-4l6kg
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                   From                    Message
+  ----     ------   ----                  ----                    -------
+  Warning  BackOff  14m (x24697 over 3d)  kubelet, worker-k8s-24  Back-off restarting failed container
+  Normal   Pulled   4m (x1066 over 3d)    kubelet, worker-k8s-24  Container image "gitlab.interno.srmasset.com:5005/m18/m18-cpd-transferencia-doc-ted/master:b6f4a658543d2a735fa85e17a75b9822f6c524c4" already present on machine
+#####################################################################################
+## Pod Name: staging-7bf66d9c69-dlrv6
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  3m (x25476 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: m18-pagamento-boleto-th-1193
+## Pod Name: staging-5fb5887df4-5t45d
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x24708 over 3d)  kubelet, worker-k8s-11  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-5f7b8565ff-ppnhh
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x24818 over 3d)  kubelet, worker-k8s-13  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: m18-transferencia-th-681
+## Pod Name: staging-74ccf4d9d6-msxvp
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x24883 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-5cc4568b79-49tfr
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   19m (x1063 over 3d)  kubelet, worker-k8s-24  Container image "gitlab.interno.srmasset.com:5005/m18/transferencias/m18-transferencia-th/master:733f0ac872b6c5cd40195cc4168551034944364f" already present on machine
+  Warning  BackOff  4m (x24762 over 3d)  kubelet, worker-k8s-24  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: onboarding-guilherme-1215
+## Pod Name: staging-7967664dcb-gsq7l
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason     Age                  From                   Message
+  ----     ------     ----                 ----                   -------
+  Warning  Unhealthy  14m (x9652 over 3d)  kubelet, worker-k8s-1  Readiness probe failed: HTTP probe failed with statuscode: 404
+  Warning  BackOff    9m (x15792 over 3d)  kubelet, worker-k8s-1  Back-off restarting failed container
+  Warning  Unhealthy  4m (x6366 over 3d)   kubelet, worker-k8s-1  Liveness probe failed: HTTP probe failed with statuscode: 404
+#####################################################################################
+## Pod Name: staging-556b8ffddc-fxvlp
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason     Age                  From                    Message
+  ----     ------     ----                 ----                    -------
+  Warning  Unhealthy  9m (x7999 over 3d)   kubelet, worker-k8s-13  Readiness probe failed: HTTP probe failed with statuscode: 404
+  Warning  BackOff    4m (x15147 over 3d)  kubelet, worker-k8s-13  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: srm-controlador-credito-pagamento-1114
+## Pod Name: staging-7fb4695747-llfvp
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   59m (x1037 over 3d)  kubelet, worker-k8s-22  Container image "gitlab.interno.srmasset.com:5005/srm/servicos/srm-controlador-credito-pagamento/master:83eb231c4706c354251f4033e7292416bdfa3a40" already present on machine
+  Warning  BackOff  4m (x24386 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: srm-operacao-465
+## Pod Name: staging-88bdb4fbb-4g9dn
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x25307 over 3d)  kubelet, worker-k8s-13  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-565c98d79-lt2hz
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  1m (x10978 over 1d)  kubelet, worker-k8s-11  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: srm-remessa-securitizacao-1217
+## Pod Name: desenvolvimento-7857879bd4-gmrll
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   49m (x1021 over 3d)  kubelet, worker-k8s-10  Container image "gitlab.interno.srmasset.com:5005/srm/srm-remessa-securitizacao/master:2059f9b173e3a35188a849ae08d425ecded5a882" already present on machine
+  Warning  BackOff  4m (x24478 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Pod Name: desenvolvimento-6bfb8d9779-vjjb5
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                    From                   Message
+  ----     ------   ----                   ----                   -------
+  Normal   Pulled   19m (x5640 over 20d)   kubelet, worker-k8s-0  Container image "gitlab.interno.srmasset.com:5005/srm/srm-remessa-securitizacao/master:2b5a0214482f65d3777d8ab86cf567aee1c50b85" already present on machine
+  Warning  BackOff  3m (x136174 over 20d)  kubelet, worker-k8s-0  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: srm-web-proxy
+## Pod Name: staging-85d6d97c86-msnxj
+      Reason:       CrashLoopBackOff
+      Reason:       Completed
+Events:
+  Type     Reason     Age                  From                    Message
+  ----     ------     ----                 ----                    -------
+  Warning  Unhealthy  23m (x5219 over 3d)  kubelet, worker-k8s-10  Readiness probe failed: HTTP probe failed with statuscode: 404
+  Warning  BackOff    9m (x13907 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+  Warning  Unhealthy  4m (x5761 over 3d)   kubelet, worker-k8s-10  Liveness probe failed: HTTP probe failed with statuscode: 404
+#####################################################################################
+## Aplication Namespace: th-web-proxy1-995
+## Pod Name: desenvolvimento-574d47cfb9-rrxt5
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x25327 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: trusthub-antecipacao-web-831
+## Pod Name: staging-5548684dd5-l62sx
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason     Age                    From                    Message
+  ----     ------     ----                   ----                    -------
+  Warning  Unhealthy  9m (x101438 over 56d)  kubelet, worker-k8s-14  Readiness probe failed: HTTP probe failed with statuscode: 404
+  Warning  BackOff    4m (x257570 over 56d)  kubelet, worker-k8s-14  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: trusthub-comum-bases-cadastrais-714
+## Pod Name: staging-7c54f69894-ckzhp
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                   Message
+  ----     ------   ----                 ----                   -------
+  Warning  BackOff  4m (x26070 over 3d)  kubelet, worker-k8s-1  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-559b67dfc9-82sg8
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x26044 over 3d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: trusthub-comum-integracao-sigma-773
+## Pod Name: staging-7df56cb87f-plpxp
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x25307 over 3d)  kubelet, worker-k8s-24  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-58ccbbcbd8-lmh2j
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Warning  BackOff  4m (x25331 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: trusthub-notificacao-plataforma-representantes-1321
+## Pod Name: staging-5d7bc994bb-957g6
+      Reason:       ImagePullBackOff
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulling  21m (x476 over 1d)   kubelet, worker-k8s-22  pulling image "gitlab.interno.srmasset.com:5005/rafael4.consultoria/trusthub-notificacao-plataforma-representantes/master:ee0955fee69927ddad57c66f78a22568a64bf3c4"
+  Warning  Failed   6m (x10206 over 1d)  kubelet, worker-k8s-22  Error: ImagePullBackOff
+  Normal   BackOff  1m (x10226 over 1d)  kubelet, worker-k8s-22  Back-off pulling image "gitlab.interno.srmasset.com:5005/rafael4.consultoria/trusthub-notificacao-plataforma-representantes/master:ee0955fee69927ddad57c66f78a22568a64bf3c4"
+#####################################################################################
+## Aplication Namespace: trusthub-orquestrador-600
+## Pod Name: staging-77f6f9b7b6-29vwl
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   14m (x1062 over 3d)  kubelet, worker-k8s-22  Container image "gitlab.interno.srmasset.com:5005/trusthub/trusthub-orquestrador/master:43a54b3c9960008d8c5fadb48a420127577645a0" already present on machine
+  Warning  BackOff  4m (x24775 over 3d)  kubelet, worker-k8s-22  Back-off restarting failed container
+#####################################################################################
+## Pod Name: staging-64b9b88885-dszd5
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                  From                    Message
+  ----     ------   ----                 ----                    -------
+  Normal   Pulled   41m (x463 over 1d)   kubelet, worker-k8s-10  Container image "gitlab.interno.srmasset.com:5005/trusthub/trusthub-orquestrador/master:085aee7ee0f391ea7a53e2917f7cc9f09cc4e1c5" already present on machine
+  Warning  BackOff  1m (x11097 over 1d)  kubelet, worker-k8s-10  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: trusthub-schedullers-plataforma-representantes-1314
+## Pod Name: review-pteste-669-efsui4-689756c46f-tt84n
+      Reason:       CrashLoopBackOff
+      Reason:       Error
+Events:
+  Type     Reason   Age                 From                    Message
+  ----     ------   ----                ----                    -------
+  Warning  BackOff  31s (x737 over 2h)  kubelet, worker-k8s-27  Back-off restarting failed container
+#####################################################################################
+## Aplication Namespace: trusthub-usuario-login-1303
