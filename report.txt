@@ -1,5 +1,5 @@
-From: assistec.noc@srmasset.com.br
-To: vinicius.alcantara@somosagility.com.br
+From: xxxxxxxxxxxxxxxxxxxxxxxxxxx
+To: yyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 Subject: REPORT: PODs com status diferente de Running
 #Content-Type: text/html; charset=utf8
 
